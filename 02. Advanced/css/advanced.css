@@ -1,0 +1,118 @@
+/* Default background color */
+body {
+  background-color: pink; /* Default color */
+}
+
+/* Change background color on larger screens */
+@media screen and (min-width: 480px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    background: dodgerblue;
+  }
+}
+
+/* Other Styles */
+div.border-radius {
+  width: 200px;
+  height: 100px;
+  background: dodgerblue;
+  border-radius: 25px;
+}
+
+p#border-img {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+    30 round;
+}
+
+div.gradient-tb {
+  height: 200px;
+  background-image: linear-gradient(to right, dodgerblue, green);
+}
+
+h1#shadows {
+  text-shadow: 2px 2px dodgerblue;
+}
+
+div.transition {
+  width: 100px;
+  height: 100px;
+  background: dodgerblue;
+}
+
+div.animation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation-name: first;
+  animation-duration: 4s;
+}
+
+@keyframes first {
+  from {
+    background: green;
+  }
+  to {
+    background: dodgerblue;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: red;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.button {
+  background: dodgerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: green;
+}
+
+.Pagination {
+  display: inline-block;
+}
+
+.Pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.Pagination a:hover {
+  color: red;
+}
